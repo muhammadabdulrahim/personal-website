@@ -4,4 +4,37 @@
 html,body {
 	margin: 0;
 	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: @background-site;
+	color: @text-color;
 }
+
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+	padding: 0;
+}
+
+h1,b,strong {
+	color: @text-bold;
+}
+
+#container {
+	max-width: 1400px;
+	margin: 0 auto;
+	background-color: @background-container;
+
+	> div {
+		margin: @margin-sm 0;
+	}
+
+}//#container
+
+.top-info {
+	text-align: center;
+	padding: @padding-sm;	
+
+	h1 {
+		text-transform: uppercase;
+		letter-spacing: 2.5px;
+	}
+}//.top-info
