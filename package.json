@@ -1,0 +1,16 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Personal Website of Muhammad Abdul-Rahim",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mabdulra@bitbucket.org/mabdulra/personal-website.git"
+  },
+  "author": "Muhammad Abdul-Rahim",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/mabdulra/personal-website#readme"
+}
