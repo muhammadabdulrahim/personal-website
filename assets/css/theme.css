@@ -28,15 +28,19 @@ strong {
   max-width: 1400px;
   margin: 0 auto;
   background-color: #ddd;
+  border-radius: 4px;
 }
 #container > div {
   margin: 20px 0;
+  padding: 20px;
 }
 .top-info {
   text-align: center;
-  padding: 20px;
 }
 .top-info h1 {
   text-transform: uppercase;
   letter-spacing: 2.5px;
+}
+.top-menu {
+  margin-top: 0;
 }
