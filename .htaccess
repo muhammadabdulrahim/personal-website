@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+php_value auto_prepend_file "./parts/header.php"
+php_value auto_append_file "./parts/footer.php"
+ErrorDocument 404 /404.php
