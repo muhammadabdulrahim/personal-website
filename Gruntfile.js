@@ -30,5 +30,9 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.registerTask('default',['less','cssmin']);
+
+	//	Register tasks
+	grunt.registerTask('compile-css',['less','cssmin']);
+	grunt.registerTask('compile-watch',['compile-css','watch']);
+	grunt.registerTask('default',['compile-css']);
 };
