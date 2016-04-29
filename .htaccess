@@ -1,4 +1,6 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
+php_value php_prepend_file "~/muhammadabdulrahim.com/parts/header.php"
+php_value php_append_file "~/muhammadabdulrahim.com/parts/footer.php"
 ErrorDocument 404 /404
