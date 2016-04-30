@@ -1,5 +1,5 @@
 <?php include('parts/header.php'); ?>
 
-<p>I made stuff once.</p>
+<p>Projects</p>
 
 <?php include('parts/footer.php'); ?>

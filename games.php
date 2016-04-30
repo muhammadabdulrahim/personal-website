@@ -1,5 +1,5 @@
 <?php include('parts/header.php'); ?>
 
-<p>vidyagems here</p>
+<p>Game</p>
 
 <?php include('parts/footer.php'); ?>

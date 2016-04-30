@@ -12,5 +12,11 @@
   },
   "author": "Muhammad Abdul-Rahim",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/mabdulra/personal-website#readme"
+  "homepage": "https://bitbucket.org/mabdulra/personal-website#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-less": "^1.3.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
 }

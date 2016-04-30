@@ -1,10 +1,20 @@
 @import "constants.less";
 @import "mixins.less";
 
-html,body {
+/* GLOBAL RESET */
+
+* {
 	margin: 0;
 	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
 	font-family: Helvetica, Arial, sans-serif;
+	background: url('../images/bg.gif') top left repeat-x;
 	background-color: @background-site;
 	color: @text-color;
 }
@@ -21,8 +31,6 @@ h1,b,strong {
 #container {
 	max-width: 1400px;
 	margin: 0 auto;
-	background-color: @background-container;
-
 	border-radius: 4px;
 
 	> div {
@@ -32,15 +40,38 @@ h1,b,strong {
 	
 }//#container
 
-.top-info {
+.top-info, .bottom-info {
+	background-color: @background-container;
 	text-align: center;
 
 	h1 {
 		text-transform: uppercase;
 		letter-spacing: 2.5px;
 	}
-}//.top-info
+	
+}//.top-info, .bottom-info
 
-.top-menu {
-	margin-top: 0;
-}//.top-menu
+/* HOMEPAGE */
+
+.homepage-buckets {
+
+	display: table;
+	width: 100%;
+
+	.bucket {
+		display: table-cell;
+		text-align: center;
+		width: 25%;
+	}
+
+}//.homepage-buckets
+
+/* PROJECTS */
+
+/* GAMES */
+
+/* INTERESTS */
+
+/* ABOUT */
+
+/* 404 */

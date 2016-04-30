@@ -1,5 +1,5 @@
 <?php include('parts/header.php'); ?>
 
-<p>Bummer, dude.</p>
+<p>404</p>
 
 <?php include('parts/footer.php'); ?>

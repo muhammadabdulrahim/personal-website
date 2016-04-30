@@ -1,13 +1,28 @@
 .line {
   display: inline-block;
 }
-html,
-body {
+.clearfix {
+  clear: both;
+}
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  clear: both;
+}
+/* GLOBAL RESET */
+* {
   margin: 0;
   padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
   font-family: Helvetica, Arial, sans-serif;
-  background-color: #fff;
-  color: #333;
+  background: url('../images/bg.gif') top left repeat-x;
+  background-color: #C0C0C0;
+  color: #D0D0D0;
 }
 h1,
 h2,
@@ -22,25 +37,39 @@ p {
 h1,
 b,
 strong {
-  color: #111;
+  color: #F0F0F0;
 }
 #container {
   max-width: 1400px;
   margin: 0 auto;
-  background-color: #ddd;
   border-radius: 4px;
 }
 #container > div {
   margin: 20px 0;
   padding: 20px;
 }
-.top-info {
+.top-info,
+.bottom-info {
+  background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
 }
-.top-info h1 {
+.top-info h1,
+.bottom-info h1 {
   text-transform: uppercase;
   letter-spacing: 2.5px;
 }
-.top-menu {
-  margin-top: 0;
+/* HOMEPAGE */
+.homepage-buckets {
+  display: table;
+  width: 100%;
 }
+.homepage-buckets .bucket {
+  display: table-cell;
+  text-align: center;
+  width: 25%;
+}
+/* PROJECTS */
+/* GAMES */
+/* INTERESTS */
+/* ABOUT */
+/* 404 */
