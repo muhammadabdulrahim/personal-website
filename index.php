@@ -1,4 +1,4 @@
-<?php include('/parts/header.php'); ?>
+<?php include('parts/header.php'); ?>
 
 <div id="container">
 	<h1>Hello! I'm Muhammad Abdul-Rahim!</h1>
@@ -39,4 +39,4 @@
 </div>
 
 
-<?php include('/parts/footer.php'); ?>
+<?php include('parts/footer.php'); ?>

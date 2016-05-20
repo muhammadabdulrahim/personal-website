@@ -1,4 +1,4 @@
-<?php include('/parts/functions.php'); ?>
+<?php include('parts/functions.php'); ?>
 <!DOCTYPE html>
 
 <HTML lang="en">
@@ -10,4 +10,4 @@
 </head>
 <body>
 
-<?php include('/parts/aside.php'); ?>
+<?php include('parts/aside.php'); ?>
