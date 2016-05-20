@@ -8,11 +8,22 @@ body {
 	background: url('../images/bg.gif') top left repeat-x;
 	background-color: @background-site;
 	color: @text-color;
+	
+	padding: 0;
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 h1,h2,h3,h4,h5,h6,p {
 	margin: 0;
 	padding: 0;
+}
+
+p {
+	margin-bottom: @margin-sm;
 }
 
 a {
@@ -31,6 +42,10 @@ pre {
 	color: black;
 }
 
+b,strong {
+	color: @text-bold;
+}
+
 /* Floating Aside */
 
 #aside {
@@ -41,13 +56,22 @@ pre {
 	position: fixed;
 	top: @margin-lg;
 	left: @margin-lg;
+	font-size: 0;
+	box-sizing: content-box;
+	z-index: 20;
+	
+	>* {
+		font-size: 16px;
+	}
 	
 	width: 100%;
 	max-width: 250px;
 	text-align: center;
 	letter-spacing: 1px;
 	
-	//	TODO: Add mobile styles
+	@media @lg-desktop {
+		display: none;
+	}
 	
 	img {
 		max-width: 250px;
@@ -77,27 +101,120 @@ pre {
 	}
 	
 	ul,ol {
-		text-align: left;
+		width: 100%;
 		list-style: none;
 		padding: 0;
+		margin: @margin-xs 0;
 		
-		li {
+		&.contact-panel li {
 			width: 50%;
-			text-align: center;
 			float: left;
 		}
 		
 		.clearfix;
-		
+	}
+	
+	p {
+		margin: 0;
 	}
 	
 }
 
-/* Main container */
+/* Main containers */
 
 #container {
 	max-width: 1400px;
 	background-color: @container-background;
-	min-height: 1000px;
 	margin: 50px auto 0;
+	padding: 30px 50px 30px 300px;
+	font-size: 20px;
+	
+	@media @lg-desktop {
+		padding-left: 50px;
+	}
+	
+	h1 {
+		margin-bottom: @margin-xs;
+		font-size: 28px;
+	}
+	
+	h2 {
+		font-size: 18px;
+		font-style: italic;
+		font-weight: normal;
+		margin-bottom: @margin-sm;
+		
+		width: 100%;
+		padding-bottom: @padding-xs;
+		border-bottom: 1px solid @text-color;
+	}
+	
+	p {
+		line-height: 30px;
+	}
+	
+}
+
+#photography {
+	margin-top: @margin-md;
+	background-color: black;//TODO
+	position:relative;
+	overflow: hidden;
+	
+	color: white;//TODO
+	
+	&::after {
+		content:'';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index:1;
+		width: 100%;
+		height: 100%;
+		opacity: 0.6;
+		background: url('../images/IMG_5543.JPG');
+		background-size: cover;
+	}
+	
+	
+	.inner {
+		position: relative;
+		z-index: 2;
+		max-width: 1400px;
+		margin: 50px auto 0;
+		padding: 30px 50px 30px 300px;
+		font-size: 20px;
+		
+		
+		@media @lg-desktop {
+			padding-left: 50px;
+		}
+		
+		.image-portfolio {
+			width: 100%;
+			.clearfix;
+			
+			.image {
+				
+				width: 33%;
+				float: left;
+				padding: 0 @padding-sm;
+				
+				* {
+					display: block;
+				}
+				
+				img {
+					width: 100%;
+					height: auto;
+				}
+				
+				span {
+					font-style: italic;
+					text-align: center;
+				}
+			}
+		}
+	}
 }

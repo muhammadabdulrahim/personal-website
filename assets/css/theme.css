@@ -1,5 +1,6 @@
 .clearfix {
   clear: both;
+  display: inline-block;
 }
 .clearfix:before,
 .clearfix:after {
@@ -11,7 +12,12 @@ body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   background: url('../images/bg.gif') top left repeat-x;
   background-color: #C0C0C0;
-  color: #D0D0D0;
+  color: #111;
+  padding: 0;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
 }
 h1,
 h2,
@@ -23,18 +29,25 @@ p {
   margin: 0;
   padding: 0;
 }
+p {
+  margin-bottom: 20px;
+}
 a {
   text-decoration: none;
   color: #003fdf;
   font-weight: bold;
 }
 a:hover {
-  color: #3f00df;
+  color: #6f00df;
 }
 pre {
   z-index: 100;
   background-color: white;
   color: black;
+}
+b,
+strong {
+  color: #000;
 }
 /* Floating Aside */
 #aside {
@@ -45,10 +58,21 @@ pre {
   position: fixed;
   top: 80px;
   left: 80px;
+  font-size: 0;
+  box-sizing: content-box;
+  z-index: 20;
   width: 100%;
   max-width: 250px;
   text-align: center;
   letter-spacing: 1px;
+}
+#aside > * {
+  font-size: 16px;
+}
+@media only screen and (max-width: 1649px) {
+  #aside {
+    display: none;
+  }
 }
 #aside img {
   max-width: 250px;
@@ -74,15 +98,16 @@ pre {
 }
 #aside ul,
 #aside ol {
-  text-align: left;
+  width: 100%;
   list-style: none;
   padding: 0;
+  margin: 10px 0;
   clear: both;
+  display: inline-block;
 }
-#aside ul li,
-#aside ol li {
+#aside ul.contact-panel li,
+#aside ol.contact-panel li {
   width: 50%;
-  text-align: center;
   float: left;
 }
 #aside ul:before,
@@ -92,10 +117,94 @@ pre {
   content: '';
   clear: both;
 }
-/* Main container */
+#aside p {
+  margin: 0;
+}
+/* Main containers */
 #container {
   max-width: 1400px;
   background-color: rgba(255, 255, 255, 0.65);
-  min-height: 1000px;
   margin: 50px auto 0;
+  padding: 30px 50px 30px 300px;
+  font-size: 20px;
+}
+@media only screen and (max-width: 1649px) {
+  #container {
+    padding-left: 50px;
+  }
+}
+#container h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+#container h2 {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 20px;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #111;
+}
+#container p {
+  line-height: 30px;
+}
+#photography {
+  margin-top: 40px;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+#photography::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background: url('../images/IMG_5543.JPG');
+  background-size: cover;
+}
+#photography .inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1400px;
+  margin: 50px auto 0;
+  padding: 30px 50px 30px 300px;
+  font-size: 20px;
+}
+@media only screen and (max-width: 1649px) {
+  #photography .inner {
+    padding-left: 50px;
+  }
+}
+#photography .inner .image-portfolio {
+  width: 100%;
+  clear: both;
+  display: inline-block;
+}
+#photography .inner .image-portfolio:before,
+#photography .inner .image-portfolio:after {
+  content: '';
+  clear: both;
+}
+#photography .inner .image-portfolio .image {
+  width: 33%;
+  float: left;
+  padding: 0 20px;
+}
+#photography .inner .image-portfolio .image * {
+  display: block;
+}
+#photography .inner .image-portfolio .image img {
+  width: 100%;
+  height: auto;
+}
+#photography .inner .image-portfolio .image span {
+  font-style: italic;
+  text-align: center;
 }
