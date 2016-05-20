@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://mabdulra@bitbucket.org/mabdulra/personal-website.git"
+    "url": "git+https://moobeidallah@bitbucket.org/moobeidallah/personal-website.git"
   },
   "author": "Muhammad Abdul-Rahim",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/mabdulra/personal-website#readme",
+  "homepage": "https://bitbucket.org/moobeidallah/personal-website#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-cssmin": "^1.0.1",
