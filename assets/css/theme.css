@@ -1,6 +1,3 @@
-.line {
-  display: inline-block;
-}
 .clearfix {
   clear: both;
 }
@@ -34,42 +31,3 @@ p {
   margin: 0;
   padding: 0;
 }
-h1,
-b,
-strong {
-  color: #F0F0F0;
-}
-#container {
-  max-width: 1400px;
-  margin: 0 auto;
-  border-radius: 4px;
-}
-#container > div {
-  margin: 20px 0;
-  padding: 20px;
-}
-.top-info,
-.bottom-info {
-  background-color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-}
-.top-info h1,
-.bottom-info h1 {
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-}
-/* HOMEPAGE */
-.homepage-buckets {
-  display: table;
-  width: 100%;
-}
-.homepage-buckets .bucket {
-  display: table-cell;
-  text-align: center;
-  width: 25%;
-}
-/* PROJECTS */
-/* GAMES */
-/* INTERESTS */
-/* ABOUT */
-/* 404 */
