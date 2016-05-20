@@ -1,16 +1,19 @@
 <?php
 
 define('VERSION','1.0.0');
-define('HOME_URL',$_SERVER['REQUEST_URI']);
 
 function get_home_uri()
 {
-	return HOME_URI;
+	$https = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https://' : 'http://';
+	$server = isset($_SERVER['SERVER_NAME']) ? $_SERVER['SERVER_NAME'] : '';
+	$request = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
+	
+	return $https.$server.$request;
 }
 
 function get_assets_uri()
 {
-	return HOME_URL.'assets';
+	return get_home_uri().'assets';
 }
 
 function pre_print_r($s)
