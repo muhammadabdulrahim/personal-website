@@ -164,6 +164,45 @@ img {
     padding-left: 50px;
   }
 }
+.portfolio {
+  width: 100%;
+  clear: both;
+  display: inline-block;
+}
+.portfolio:before,
+.portfolio:after {
+  content: '';
+  clear: both;
+}
+.portfolio .node {
+  width: 33%;
+  float: left;
+  padding: 0 20px;
+  text-align: center;
+}
+.portfolio .node * {
+  display: block;
+}
+.portfolio .node img {
+  width: 100%;
+  height: auto;
+}
+.portfolio .node h1 {
+  text-align: center;
+  font-size: 20px;
+}
+.portfolio .node span {
+  font-style: italic;
+}
+.portfolio .node:nth-child(3n+1) {
+  clear: both;
+  display: inline-block;
+}
+.portfolio .node:nth-child(3n+1):before,
+.portfolio .node:nth-child(3n+1):after {
+  content: '';
+  clear: both;
+}
 #photography {
   margin-top: 40px;
   background-color: black;
@@ -183,30 +222,4 @@ img {
   opacity: 0.6;
   background: url('../images/IMG_5543.JPG') 0 50%;
   background-size: cover;
-}
-#photography .image-portfolio {
-  width: 100%;
-  clear: both;
-  display: inline-block;
-}
-#photography .image-portfolio:before,
-#photography .image-portfolio:after {
-  content: '';
-  clear: both;
-}
-#photography .image-portfolio .image {
-  width: 33%;
-  float: left;
-  padding: 0 20px;
-}
-#photography .image-portfolio .image * {
-  display: block;
-}
-#photography .image-portfolio .image img {
-  width: 100%;
-  height: auto;
-}
-#photography .image-portfolio .image span {
-  font-style: italic;
-  text-align: center;
 }
