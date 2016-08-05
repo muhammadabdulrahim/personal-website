@@ -3,7 +3,7 @@
 	<h1><span>Muhammad</span><span>Abdul-Rahim</span></h1>
 	<h2>Washington, D.C. Area</h2>
 	<h3>Web, Mobile, Game Developer</h3>
-	<p>moobeidallah [at] gmail [dot] com</p>
+	<p>moobeidallah [at] gmail</p>
 	<p>C, C#, Java, PHP, JS</p>
 	
 </div>
