@@ -46,6 +46,11 @@ b,strong {
 	color: @text-bold;
 }
 
+img {
+	width: 100%;
+	height: auto;
+}
+
 /* Floating Aside */
 
 #aside {
@@ -75,8 +80,6 @@ b,strong {
 	
 	img {
 		max-width: 250px;
-		width: 100%;
-		height: auto;
 		margin-bottom: @margin-xxs;
 	}
 	
@@ -155,6 +158,19 @@ b,strong {
 	
 }
 
+.inner {
+	position: relative;
+	z-index: 2;
+	max-width: 1400px;
+	margin: 50px auto 0;
+	padding: 30px 50px 30px 300px;
+	font-size: 20px;
+	
+	@media @lg-desktop {
+		padding-left: 50px;
+	}
+}
+
 #photography {
 	margin-top: @margin-md;
 	background-color: black;//TODO
@@ -173,48 +189,34 @@ b,strong {
 		width: 100%;
 		height: 100%;
 		opacity: 0.6;
-		background: url('../images/IMG_5543.JPG');
+		background: url('../images/IMG_5543.JPG') 0 50%;
 		background-size: cover;
 	}
 	
-	
-	.inner {
-		position: relative;
-		z-index: 2;
-		max-width: 1400px;
-		margin: 50px auto 0;
-		padding: 30px 50px 30px 300px;
-		font-size: 20px;
+	.image-portfolio {
+		width: 100%;
+		.clearfix;
 		
-		
-		@media @lg-desktop {
-			padding-left: 50px;
-		}
-		
-		.image-portfolio {
-			width: 100%;
-			.clearfix;
+		.image {
 			
-			.image {
-				
-				width: 33%;
-				float: left;
-				padding: 0 @padding-sm;
-				
-				* {
-					display: block;
-				}
-				
-				img {
-					width: 100%;
-					height: auto;
-				}
-				
-				span {
-					font-style: italic;
-					text-align: center;
-				}
+			width: 33%;
+			float: left;
+			padding: 0 @padding-sm;
+			
+			* {
+				display: block;
+			}
+			
+			img {
+				width: 100%;
+				height: auto;
+			}
+			
+			span {
+				font-style: italic;
+				text-align: center;
 			}
 		}
 	}
+	
 }
