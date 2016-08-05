@@ -9,5 +9,3 @@
 	<link rel="stylesheet" href="<?php echo get_assets_uri(); ?>/css/theme.min.css?v=<?php echo VERSION; ?>" />
 </head>
 <body>
-
-<?php include('parts/aside.php'); ?>
