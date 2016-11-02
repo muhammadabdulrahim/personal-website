@@ -166,11 +166,13 @@ ol li {
   width: 100%;
   height: auto;
 }
-.portfolio .node h1 {
+.portfolio .node span {
   text-align: center;
+}
+.portfolio .node span.title {
   font-size: 20px;
 }
-.portfolio .node span {
+.portfolio .node span.caption {
   font-style: italic;
 }
 .portfolio .node:nth-child(3n+1) {
