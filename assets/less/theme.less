@@ -8,7 +8,7 @@ body {
 	background: url('../images/bg.gif') top left repeat-x;
 	background-color: @background-site;
 	color: @text-color;
-	
+
 	padding: 0;
 	margin: 0;
 }
@@ -30,7 +30,7 @@ a {
 	text-decoration: none;
 	color: @link-color;
 	font-weight: bold;
-	
+
 	&:hover {
 		color: @link-hover-color;
 	}
@@ -40,10 +40,6 @@ pre {
 	z-index: 100;
 	background-color: white;
 	color: black;
-}
-
-b,strong {
-	color: @text-bold;
 }
 
 img {
@@ -64,63 +60,63 @@ img {
 	font-size: 0;
 	box-sizing: content-box;
 	z-index: 20;
-	
+
 	>* {
 		font-size: 16px;
 	}
-	
+
 	width: 100%;
 	max-width: 250px;
 	text-align: center;
 	letter-spacing: 1px;
-	
+
 	@media @lg-desktop {
 		display: none;
 	}
-	
+
 	img {
 		max-width: 250px;
 		margin-bottom: @margin-xxs;
 	}
-	
+
 	h1 {
 		font-size: 28px;
 		line-height: 28px;
-		
+
 		span {
 			display: block;
 		}
 	}
-	
+
 	h2 {
 		margin: @margin-xxs 0 @margin-xs;
 		font-size: 20px;
 	}
-	
+
 	h3 {
 		font-weight: normal;
 		font-style: italic;
 		font-size: 16px;
 	}
-	
+
 	ul,ol {
 		width: 100%;
 		list-style: none;
 		padding: 0;
 		margin: @margin-xs 0;
-		
+
 		&.contact-panel li {
 			width: 50%;
 			float: left;
 		}
-		
+
 		.clearfix;
 	}
-	
+
 	p {
 		margin: 0;
 	}
-	
+
 }
 
 /* Main containers */
@@ -128,44 +124,44 @@ img {
 #container {
 	max-width: 1400px;
 	background-color: @container-background;
-	margin: 50px auto 0;
+	margin: 50px auto @margin-md;
 	padding: 30px 50px 30px 300px;
 	font-size: 20px;
-	
+
 	@media @lg-desktop {
 		padding-left: 50px;
 	}
-	
+
 	h1 {
 		margin-bottom: @margin-xs;
 		font-size: 28px;
 	}
-	
+
 	h2 {
 		font-size: 18px;
 		font-style: italic;
 		font-weight: normal;
 		margin-bottom: @margin-sm;
-		
+
 		width: 100%;
 		padding-bottom: @padding-xs;
 		border-bottom: 1px solid @text-color;
 	}
-	
+
 	p {
 		line-height: 30px;
 	}
-	
+
 }
 
 .inner {
 	position: relative;
 	z-index: 2;
 	max-width: 1400px;
-	margin: 50px auto 0;
+	margin: 50px auto;
 	padding: 30px 50px 30px 300px;
 	font-size: 20px;
-	
+
 	@media @lg-desktop {
 		padding-left: 50px;
 	}
@@ -174,31 +170,31 @@ img {
 .portfolio {
 	width: 100%;
 	.clearfix;
-	
+
 	.node {
 		width: 33%;
 		float: left;
 		padding: 0 @padding-sm;
 		text-align: center;
-		
+
 		* {
 			display: block;
 		}
-		
+
 		img {
 			width: 100%;
 			height: auto;
 		}
-		
+
 		h1 {
 			text-align: center;
 			font-size: 20px;
 		}
-		
+
 		span {
 			font-style: italic;
 		}
-		
+
 		//	TODO: Add padding
 		&:nth-child(3n+1) {
 			.clearfix;
@@ -206,25 +202,13 @@ img {
 	}
 }
 
+/* Background images */
+// Note: Blur bg images by 5px
+#games {
+	.bg-image('../images/banner-games.png');
+	background-color: @red-bg;
+}
 #photography {
-	margin-top: @margin-md;
-	background-color: black;//TODO
-	position:relative;
-	overflow: hidden;
-	
-	color: white;//TODO
-	
-	&::after {
-		content:'';
-		display: block;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index:1;
-		width: 100%;
-		height: 100%;
-		opacity: 0.6;
-		background: url('../images/IMG_5543.JPG') 0 50%;
-		background-size: cover;
-	}
+	.bg-image('../images/IMG_5543.JPG');
+	background-color: @green-bg;
 }
