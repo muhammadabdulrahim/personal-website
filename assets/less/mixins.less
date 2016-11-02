@@ -8,10 +8,10 @@
 	}
 }
 
-.bg-image(@img) {
+.bg-image(@img,@bg:black) {
 	position:relative;
 	overflow:hidden;
-	background-color:black;
+	background-color:@bg;
 	color:white;
 
 	&::after {

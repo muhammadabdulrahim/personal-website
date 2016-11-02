@@ -28,6 +28,7 @@ h6,
 p {
   margin: 0;
   padding: 0;
+  font-weight: normal;
 }
 p {
   margin-bottom: 20px;
@@ -48,6 +49,10 @@ pre {
 img {
   width: 100%;
   height: auto;
+}
+ul li,
+ol li {
+  padding-bottom: 10px;
 }
 /* Floating Aside */
 #aside {
@@ -78,45 +83,22 @@ img {
   max-width: 250px;
   margin-bottom: 5px;
 }
-#aside h1 {
-  font-size: 28px;
-  line-height: 28px;
+#aside p {
+  margin: 0 0 5px;
 }
-#aside h1 span {
-  display: block;
+#aside p.em {
+  font-style: italic;
 }
-#aside h2 {
+#aside p.byline {
   margin: 5px 0 10px;
   font-size: 20px;
 }
-#aside h3 {
-  font-weight: normal;
-  font-style: italic;
-  font-size: 16px;
+#aside p.title {
+  font-size: 28px;
+  line-height: 30px;
 }
-#aside ul,
-#aside ol {
-  width: 100%;
-  list-style: none;
-  padding: 0;
-  margin: 10px 0;
-  clear: both;
-  display: inline-block;
-}
-#aside ul.contact-panel li,
-#aside ol.contact-panel li {
-  width: 50%;
-  float: left;
-}
-#aside ul:before,
-#aside ol:before,
-#aside ul:after,
-#aside ol:after {
-  content: '';
-  clear: both;
-}
-#aside p {
-  margin: 0;
+#aside p.title span {
+  display: block;
 }
 /* Main containers */
 #container {
@@ -199,13 +181,12 @@ img {
   content: '';
   clear: both;
 }
-/* Background images */
+/* Background images (blur images by 5px) */
 #games {
   position: relative;
   overflow: hidden;
-  background-color: black;
-  color: white;
   background-color: #402020;
+  color: white;
 }
 #games::after {
   content: '';
@@ -220,12 +201,30 @@ img {
   background: url('../images/banner-games.png') 50% 50%;
   background-size: cover;
 }
+#projects {
+  position: relative;
+  overflow: hidden;
+  background-color: #202040;
+  color: white;
+}
+#projects::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background: url('../images/banner-projects.png') 50% 50%;
+  background-size: cover;
+}
 #photography {
   position: relative;
   overflow: hidden;
-  background-color: black;
-  color: white;
   background-color: #204020;
+  color: white;
 }
 #photography::after {
   content: '';
@@ -239,4 +238,10 @@ img {
   opacity: 0.6;
   background: url('../images/IMG_5543.JPG') 50% 50%;
   background-size: cover;
+}
+#workplace {
+  background-color: #402020;
+}
+#culture {
+  background-color: #202040;
 }

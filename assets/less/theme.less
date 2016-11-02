@@ -8,7 +8,6 @@ body {
 	background: url('../images/bg.gif') top left repeat-x;
 	background-color: @background-site;
 	color: @text-color;
-
 	padding: 0;
 	margin: 0;
 }
@@ -20,6 +19,7 @@ body {
 h1,h2,h3,h4,h5,h6,p {
 	margin: 0;
 	padding: 0;
+	font-weight: normal;
 }
 
 p {
@@ -45,6 +45,12 @@ pre {
 img {
 	width: 100%;
 	height: auto;
+}
+
+ul,ol {
+	li {
+		padding-bottom: @padding-xs;
+	}
 }
 
 /* Floating Aside */
@@ -79,42 +85,23 @@ img {
 		margin-bottom: @margin-xxs;
 	}
 
-	h1 {
-		font-size: 28px;
-		line-height: 28px;
-
-		span {
-			display: block;
-		}
-	}
-
-	h2 {
-		margin: @margin-xxs 0 @margin-xs;
-		font-size: 20px;
-	}
-
-	h3 {
-		font-weight: normal;
-		font-style: italic;
-		font-size: 16px;
-	}
-
-	ul,ol {
-		width: 100%;
-		list-style: none;
-		padding: 0;
-		margin: @margin-xs 0;
-
-		&.contact-panel li {
-			width: 50%;
-			float: left;
-		}
-
-		.clearfix;
-	}
-
 	p {
-		margin: 0;
+		margin: 0 0 @margin-xxs;
+		&.em {
+			font-style: italic;
+		}
+		&.byline {
+			margin: @margin-xxs 0 @margin-xs;
+			font-size: 20px;
+		}
+		&.title {
+			font-size: 28px;
+			line-height: 30px;
+
+			span {
+				display: block;
+			}
+		}
 	}
 
 }
@@ -202,13 +189,20 @@ img {
 	}
 }
 
-/* Background images */
-// Note: Blur bg images by 5px
+/* Background images (blur images by 5px) */
+
 #games {
-	.bg-image('../images/banner-games.png');
-	background-color: @red-bg;
+	.bg-image('../images/banner-games.png',@red-bg);
+}
+#projects {
+	.bg-image('../images/banner-projects.png',@blue-bg);
 }
 #photography {
-	.bg-image('../images/IMG_5543.JPG');
-	background-color: @green-bg;
+	.bg-image('../images/IMG_5543.JPG',@green-bg);
+}
+#workplace {
+	background-color: @red-bg;
+}
+#culture {
+	background-color: @blue-bg;
 }
