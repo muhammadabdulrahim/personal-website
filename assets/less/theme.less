@@ -145,7 +145,7 @@ ul,ol {
 	position: relative;
 	z-index: 2;
 	max-width: 1400px;
-	margin: 50px auto;
+	margin: 50px auto 0;
 	padding: 30px 50px 30px 300px;
 	font-size: 20px;
 
@@ -163,6 +163,7 @@ ul,ol {
 		float: left;
 		padding: 0 @padding-sm;
 		text-align: center;
+		margin-bottom: @margin-md;
 
 		* {
 			display: block;
@@ -182,7 +183,6 @@ ul,ol {
 			font-style: italic;
 		}
 
-		//	TODO: Add padding
 		&:nth-child(3n+1) {
 			.clearfix;
 		}
@@ -201,7 +201,15 @@ ul,ol {
 	.bg-image('../images/IMG_5543.JPG',@green-bg);
 }
 #workplace {
-	background-color: @red-bg;
+	.bg-image('../images/banner-workplace.jpg',@red-bg);
+
+	//	TODO: Fix display style
+	img {
+		width: auto;
+		max-height: 100px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 #culture {
 	background-color: @blue-bg;

@@ -4,4 +4,6 @@
 <?php include('parts/games.php'); ?>
 <?php include('parts/projects.php'); ?>
 <?php include('parts/photography.php'); ?>
+<?php include('parts/workplace.php'); ?>
+<?php include('parts/culture.php'); ?>
 <?php include('parts/footer.php'); ?>

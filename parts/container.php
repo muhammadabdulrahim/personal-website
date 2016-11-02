@@ -10,5 +10,5 @@
 		<li>Android, iOS &mdash; Created cross-platform native applications with shared subrepositories</li>
 		<li>WordPress &mdash; Developed multiple sites for a variety of clients with PHP, CSS, JS, and the like</li>
 	</ul>
-	<p>Want to learn more about what I've done? Scroll down and discover more! Or alternatively, <a href="mailto:moobeidallah@gmail.com">send me an email</a>.</p>
+	<p>Want to learn more about what I've done? Scroll down and discover more! Alternatively, <a href="mailto:moobeidallah@gmail.com">send me an email</a>.</p>
 </div>
