@@ -1,8 +1,8 @@
 <?php
 $data = array(
 	'id' => 'workplace',
-	'title' => 'Experience',
-	'content' => 'A partial list of my workplace history is below:',
+	'title' => 'Workplace History',
+	'content' => 'A partial list of my workplace experience is below:',
 	'pkg' => [
 		[
 			'img' => get_assets_uri().'/images/logos/gwu.png',
