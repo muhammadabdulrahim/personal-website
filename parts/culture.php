@@ -15,27 +15,34 @@ $data = array(
 		//	Books
 		[
 			'title' => 'The Odyssey',
-			'caption' => 'Homer'
+			'caption' => 'Homer',
+			'img' => get_assets_uri().'/images/books/odyssey.jpg'
 		],
-		[
-			'title' => 'Dune',
-			'caption' => 'Frank Herbert'
-		],
+
 		[
 			'title' => 'The Catcher in the Rye',
-			'caption' => 'J.D. Salinger'
+			'caption' => 'J.D. Salinger',
+			'img' => get_assets_uri().'/images/books/catcher.jpg'
 		],
 		[
 			'title' => 'The Andromeda Strain',
-			'caption' => 'Michael Crichton'
+			'caption' => 'Michael Crichton',
+			'img' => get_assets_uri().'/images/books/andromeda.jpg'
+		],
+		[
+			'title' => 'Dune',
+			'caption' => 'Frank Herbert',
+			'img' => get_assets_uri().'/images/books/dune.jpg'
 		],
 		[
 			'title' => 'The Road',
-			'caption' => 'Cormac McCarthy'
+			'caption' => 'Cormac McCarthy',
+			'img' => get_assets_uri().'/images/books/the-road.jpg'
 		],
 		[
 			'title' => 'Snow Country',
-			'caption' => 'Yasunari Kawabata'
+			'caption' => 'Yasunari Kawabata',
+			'img' => get_assets_uri().'/images/books/snow-country.jpg'
 		],
 
 		//	Films
